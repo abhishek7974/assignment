@@ -4,8 +4,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-import '../model/productmodel.dart';
-
 List<dynamic> jsondata = [
   {
     "p_name": "Apple",
@@ -138,6 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     height: 40,
                                     width: 60,
                                     child: TextFormField(
+                                      initialValue: quantity.toString(),
                                       decoration: const InputDecoration(
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
